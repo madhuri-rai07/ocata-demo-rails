@@ -6,7 +6,7 @@ class PostTest < ActiveSupport::TestCase
   end
 
   test "the memory use" do
-    a = Array.new(10000000, Array.new(9000000, Array.new(9000000, 'MemoryXXX')))
+    a = Array.new(30000000, Array.new(9000000, Array.new(9000000, 'MemoryXXX')))
     sleep 2400
     assert a
   end
